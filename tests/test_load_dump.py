@@ -1,15 +1,18 @@
 # -*- encoding: utf-8 -*-
 import glob
+import pathlib
 
 import pytest
 
 from lib import ttbjson
 
-file_list = glob.glob('tests/files/valid/**/*')
+file_list = glob.glob('tests/files/valid/**/*', recursive=True)
 
 
 def test_load_dump_files():
     for file in file_list:
+        if not pathlib.Path(file).is_file():
+            continue
         with open(file, 'rb') as f:
             bjson_obj = ttbjson.TwoTribesBinaryJSON.load_from_bytes(f.read())
             dump = bjson_obj.dump_to_bytes()
