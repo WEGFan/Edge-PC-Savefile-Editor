@@ -4,7 +4,7 @@ A tool that allows encrypting and decrypting binary JSON savefiles from PC versi
 
 ## Installation
 
-You need to install at least [Python 3.6](https://www.python.org/downloads/) (3.5 may also work, not tested) to run this program.  
+You need to install at least [Python 3.6](https://www.python.org/downloads/) to run this program.  
 Or just download the [release](https://github.com/WEGFan/Edge-PC-Savefile-Editor/releases) for Windows so you don't need to install Python.  
 
 ## Usage
