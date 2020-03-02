@@ -9,7 +9,7 @@ from typing import Union
 from . import exceptions
 
 
-def detect_header_by_json_filepath(path: str) -> bytes:
+def detect_header_by_json_filepath(path: str) -> str:
     if not isinstance(path, str):
         raise TypeError('path must be str')
     path = pathlib.Path(path)
