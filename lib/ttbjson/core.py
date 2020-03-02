@@ -4,7 +4,7 @@ import pathlib
 import re
 import struct
 import zlib
-from typing import ByteString, Union
+from typing import Union
 
 from . import exceptions
 
@@ -66,7 +66,6 @@ def _decompress(s: bytes) -> bytes:
             v5 = s[src_pos]  # unsigned char
             loop_length = v5 >> 4  # int
             if flag_v15:
-                v8 = 0
                 if loop_length == 1:
                     v8 = s[src_pos] - (256 if s[src_pos] > 127 else 0)  # converts "unsigned char" to "char"
                     v5 = s[src_pos + 2]
