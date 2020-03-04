@@ -1,0 +1,10 @@
+[run]
+branch = true
+omit = venv/*
+
+[report]
+omit = venv/*
+precision = 2
+
+[html]
+show_contexts = true
