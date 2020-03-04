@@ -2,6 +2,7 @@
 import argparse
 import json
 import pathlib
+import sys
 
 from lib import ttbjson
 
@@ -74,4 +75,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except (EOFError, KeyboardInterrupt) as err:
+        sys.exit()
