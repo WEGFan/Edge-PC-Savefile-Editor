@@ -17,7 +17,7 @@ def main():
     # for unit testing with distribution package
     # should exclude unit test module before release packaging
     try:
-        from run_tests import run_tests
+        import pytest
         parser.add_argument('-t', '--test', action='store_true', help='run unit tests')
     except ImportError as err:
         pass
@@ -26,7 +26,7 @@ def main():
 
     if args.__dict__.get('test'):
         # i don't know why running coverage report with distribution package will fail...
-        run_tests(False)
+        pytest.main(['tests/', '-l', '-v', '-s'])
         return
 
     if not args.files:
