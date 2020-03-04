@@ -11,7 +11,7 @@ Or just download the [release](https://github.com/WEGFan/Edge-PC-Savefile-Editor
 
 ### Running with Python
 
-```plaintext
+```console
 $ python savefile_editor.py
 usage: savefile_editor.py [-h] [-r] [-v] [files [files ...]]
 
