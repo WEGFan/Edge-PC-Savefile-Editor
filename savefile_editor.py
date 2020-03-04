@@ -5,12 +5,14 @@ import pathlib
 
 from lib import ttbjson
 
+__version__ = '1.0.0'
+
 
 def main():
     parser = argparse.ArgumentParser(description='Encrypt and decrypt binary JSON savefiles from EDGE PC version.')
     parser.add_argument('files', nargs='*', help='the files to be encrypted or decrypted, output files are in the same folder with input files')
     parser.add_argument('-r', '--raw', action='store_true', help="don't parse and prettify decrypted JSONs")
-    parser.add_argument('-v', '--version', action='version', version='Edge PC Savefile Editor v1.0.0')
+    parser.add_argument('-v', '--version', action='version', version=f'Edge PC Savefile Editor v{__version__}')
 
     # for unit testing with distribution package
     # should exclude unit test module before release packaging
