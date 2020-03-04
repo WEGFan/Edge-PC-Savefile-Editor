@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from .core import TwoTribesBinaryJSON, detect_header_by_json_filepath
 from .exceptions import Error, LoadFileError
 
