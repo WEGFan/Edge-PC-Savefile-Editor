@@ -32,6 +32,13 @@ optional arguments:
 The command line arguments are the same as above.  
 You can also directly drag files onto the executable to quickly encrypt / decrypt them.
 
+## Run tests & coverage
+
+```console
+pip install -r requirements_test.txt
+python -m pytest
+```
+
 ## Not working?
 
 Feel free to [submit an issue](https://github.com/WEGFan/Edge-PC-Savefile-Editor/issues/new) if you encounter any problems.  
