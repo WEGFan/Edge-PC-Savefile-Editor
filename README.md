@@ -34,7 +34,7 @@ You can also directly drag files onto the executable to quickly encrypt / decryp
 
 ## Run tests & coverage
 
-```console
+```bash
 pip install -r requirements_test.txt
 python -m pytest
 ```
